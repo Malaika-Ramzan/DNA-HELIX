@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNA HELIX - The Code of Life</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="logo">DNA<span>HELIX</span></div>
+  <nav id="nav">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About DNA</a>
+    <a href="#structure">Structure</a>
+    <a href="#bases">Bases</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <span class="badge">PURE CSS • 3D • 0% JS ANIMATION</span>
+    <h1>The Code<br><span>Of Life</span></h1>
+    <p>DNA is the blueprint of our body. Inside every human, there is a code of 3 billion letters that makes us who we are.</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn-white">EXPLORE DNA →</a>
+      <a href="#structure" class="btn-ghost">SEE STRUCTURE</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>3B+</b><small>DNA Letters</small></div>
+      <div><b>46</b><small>Chromosomes</small></div>
+      <div><b>99.9%</b><small>Same In All Humans</small></div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="scene">
+      <div class="helix" id="helix"></div>
+    </div>
+    <p class="helix-label">Double Helix - Live 3D</p>
+  </div>
+</section>
+
+<!-- ABOUT DNA -->
+<section class="about" id="about">
+  <h2 class="sec-title">What Is <span>DNA?</span></h2>
+  <p class="sec-sub">Deoxyribonucleic Acid - The Book of Your Life</p>
+  <div class="about-grid">
+    <div class="about-card">
+      <div class="icon">🧬</div>
+      <h3>Blueprint of Life</h3>
+      <p>DNA contains all the instructions that decide your eye color, hair color, and height.</p>
+    </div>
+    <div class="about-card">
+      <div class="icon">👨‍👩‍👧</div>
+      <h3>From Parents</h3>
+      <p>Half of your DNA comes from your mother and half from your father. That is why you look like your parents.</p>
+    </div>
+    <div class="about-card">
+      <div class="icon">🔬</div>
+      <h3>Inside Every Cell</h3>
+      <p>Every cell in your body contains DNA. If you straighten it, it would be 2 meters long!</p>
+    </div>
+  </div>
+</section>
+
+<!-- STRUCTURE -->
+<section class="structure" id="structure">
+  <div class="str-left">
+    <p class="sec-small">DOUBLE HELIX STRUCTURE</p>
+    <h2>2 Strands,<br><span>Twisted Together</span></h2>
+    <p>DNA looks like a ladder that has been twisted. It has 2 side rails and steps in the middle.</p>
+    <ul>
+      <li><b>1. Sugar + Phosphate:</b> The side wall</li>
+      <li><b>2. Base Pairs:</b> The steps in the middle</li>
+      <li><b>3. Hydrogen Bond:</b> Holds both strands together</li>
+    </ul>
+    <button class="btn-white" id="speedBtn">⏸️ PAUSE ANIMATION</button>
+  </div>
+  <div class="str-right">
+    <div class="mini-helix">
+      <div class="helix" id="helix2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BASES -->
+<section class="bases" id="bases">
+  <h2 class="sec-title">4 Letters of <span>Life</span></h2>
+  <p class="sec-sub">Click on any base to see its details</p>
+  <div class="bases-grid">
+    <div class="base-card a" data-base="A">
+      <b>A</b><h3>Adenine</h3><p>Pairs with Thymine</p>
+    </div>
+    <div class="base-card t" data-base="T">
+      <b>T</b><h3>Thymine</h3><p>Pairs with Adenine</p>
+    </div>
+    <div class="base-card g" data-base="G">
+      <b>G</b><h3>Guanine</h3><p>Pairs with Cytosine</p>
+    </div>
+    <div class="base-card c" data-base="C">
+      <b>C</b><h3>Cytosine</h3><p>Pairs with Guanine</p>
+    </div>
+  </div>
+  <div class="base-info" id="baseInfo">
+    <h3 id="baseTitle">Click on any Base</h3>
+    <p id="baseDesc">Adenine always pairs with Thymine. This is the strongest pairing in DNA.</p>
+  </div>
+</section>
+
+<!-- FUN FACT -->
+<section class="fact">
+  <h2>Fun Fact</h2>
+  <p id="factText">If you take out all the DNA from your body and straighten it, it could go to the Sun and back 60 times!</p>
+  <button id="factBtn">NEXT FACT →</button>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Learn More <span>About DNA</span></h2>
+  <p>Write your name, we will send you free DNA notes.</p>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name *" required>
+    <input type="email" placeholder="Email *" required>
+    <button type="submit">SEND ME NOTES →</button>
+    <p id="successMsg">Thank you! Notes have been sent to your email.</p>
+  </form>
+</section>
+
+<footer>Made with ❤️ by Malaika • DNA HELIX • HTML • CSS • JavaScript</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
